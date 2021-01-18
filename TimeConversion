@@ -1,0 +1,21 @@
+package java;
+
+import java.util.*;
+
+public class TimeConversion {
+	public static void main (String[] args) {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Input the number of minutes:");
+	int a = sc.nextInt();
+	convert(a);
+	}
+	public static void convert(int x){
+	    int d = x/(60*24);
+	    int y = 0;
+	    if (d >= 365){
+	         y = d/365;
+	         d = d%365;
+	        }
+	    System.out.println(x+" minutes is approximately "+y+" years and "+d+" days.");
+	}
+}
