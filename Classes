@@ -1,0 +1,23 @@
+package java
+
+import java.util.*;
+
+public class Employee{
+    public static String name;
+    public static int year;
+    public static String address;
+    
+    public static void printDetails(String a, int b, String c){
+        System.out.println(a+" "+String.valueOf(b)+" "+c);
+    }
+
+    public static void main (String[] args) {
+        Employee a = new Employee();
+        Employee b = new Employee();
+        Employee c = new Employee();
+        System.out.println("Name Year of joining Address");
+		a.printDetails("Robert",1994,"64C-WallsStreet");
+		b.printDetails("Sam",2000,"64D-WallsStreet");
+		c.printDetails("John",1998,"26B-WallsStreet");
+	}
+}
